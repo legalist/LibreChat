@@ -50,8 +50,8 @@ export default defineConfig(({ command }) => ({
       },
       includeAssets: [],
       manifest: {
-        name: 'Legalist ChatGPT',
-        short_name: 'Legalist ChatGPT',
+        name: 'Legalist Chat',
+        short_name: 'Legalist Chat',
         start_url: '/',
         display: 'standalone',
         background_color: '#000000',
