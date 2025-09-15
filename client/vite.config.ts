@@ -41,10 +41,8 @@ export default defineConfig(({ command }) => ({
       workbox: {
         globPatterns: [
           '**/*.{js,css,html}',
-          'assets/favicon*.png',
-          'assets/icon-*.png',
-          'assets/apple-touch-icon*.png',
-          'assets/maskable-icon.png',
+          'assets/*.ico',
+          'assets/apple-touch-icon*.jpg',
           'manifest.webmanifest',
         ],
         globIgnores: ['images/**/*', '**/*.map', 'index.html'],
@@ -53,37 +51,27 @@ export default defineConfig(({ command }) => ({
       },
       includeAssets: [],
       manifest: {
-        name: 'LibreChat',
-        short_name: 'LibreChat',
+        name: 'Legalist Chat',
+        short_name: 'Legalist Chat',
+        start_url: '/',
         display: 'standalone',
         background_color: '#000000',
         theme_color: '#009688',
         icons: [
           {
-            src: 'assets/favicon-32x32.png',
+            src: '/assets/legalist_favicon.ico',
             sizes: '32x32',
-            type: 'image/png',
+            type: 'image/x-icon',
           },
           {
-            src: 'assets/favicon-16x16.png',
+            src: '/assets/legalist_favicon.ico',
             sizes: '16x16',
-            type: 'image/png',
+            type: 'image/x-icon',
           },
           {
             src: 'assets/apple-touch-icon-180x180.png',
             sizes: '180x180',
             type: 'image/png',
-          },
-          {
-            src: 'assets/icon-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: 'assets/maskable-icon.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'maskable',
           },
         ],
       },
